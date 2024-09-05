@@ -10,37 +10,45 @@ print(" ")
 
 operacion_seleccionada = input("Introduce que operador quieres seleccionar: ")
 
-num_1 = int(input("Pon el primer numero que quieras operar: "))
+def function_num1():
 
-num_2 = int(input("Pon el segundo numero que quieras operar: "))
+    return int(input("Pon el primer numero que quieras operar: "))
+
+def function_num2():
+
+    return int(input("Pon el segundo numero que quieras operar: "))
+
+num_1 = function_num1() 
+
+num_2 = function_num2()
 
 
 if operacion_seleccionada == "1":
 
-    resultadoFinal= num_1 + num_2
+    resultado_final = num_1 + num_2
 
-    print("El resultado de esta operacion es: " + str(resultadoFinal))
+    print("El resultado de esta operacion es: " + str(resultado_final))
 
 
 elif operacion_seleccionada == "2":
 
-    resultadoFinal = num_1 - num_2
+    resultado_final = num_1 - num_2
 
-    print("El resultado de esta operacion es: " + str(resultadoFinal))
+    print("El resultado de esta operacion es: " + str(resultado_final))
 
 elif operacion_seleccionada == "3":
 
-    resultadoFinal = num_1 * num_2
+    resultado_final = num_1 * num_2
 
-    print("El resultado de esta operacion es: " + str(resultadoFinal))
+    print("El resultado de esta operacion es: " + str(resultado_final))
 
 elif operacion_seleccionada == "4":
 
     if num_2 != 0:
 
-            resultadoFinal = num_1 / num_2
+            resultado_final = num_1 / num_2
 
-            print("El resultado de esta operacion es: " + str(resultadoFinal))
+            print("El resultado de esta operacion es: " + str(resultado_final))
 
     else:
          
@@ -54,6 +62,8 @@ else:
 print("La calculadora se cerrara en 5 segundo")
 
 time.sleep(5)
+
+
 
 
 
