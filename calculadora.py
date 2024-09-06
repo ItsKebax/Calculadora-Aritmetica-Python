@@ -12,16 +12,19 @@ operacion_seleccionada = input("Introduce que operador quieres seleccionar: ")
 
 def function_num1():
 
-    return int(input("Pon el primer numero que quieras operar: "))
+    input_num1= int(input("Pon el primer numero que quieras operar: "))
+
+    return input_num1
 
 def function_num2():
 
-    return int(input("Pon el segundo numero que quieras operar: "))
+    input_num2= int(input("Pon el segundo numero que quieras operar: "))
 
-num_1 = function_num1() 
+    return input_num2
+ 
+num_1 = function_num1()
 
 num_2 = function_num2()
-
 
 if operacion_seleccionada == "1":
 
